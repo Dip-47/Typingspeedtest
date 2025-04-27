@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Typing Speed Test</title>
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <h1>Typing Speed Test</h1>
+ <p class="instructions">Click the start button to begin the test. Type the displayed text as fast
+and accurately as possible.</p>
+ <div class="container">
+ <p class="quote" id="quote"></p>
+ <textarea id="inputText" placeholder="Start typing here..."></textarea>
+ <button id="startBtn" onclick="startTest()">Start Test</button>
+ <button id="submitBtn" onclick="checkTyping()" style="display: none;">Submit</button>
+ <p class="error-message" id="errorMessage">Please complete the test before
+submitting.</p>
+ <p class="result" id="result"></p>
+ <button id="nextBtn" onclick="startTest()" style="display: none;">Next Test</button>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
